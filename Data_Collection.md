@@ -3,8 +3,8 @@
 ![图片](https://raw.github.com/Hasar12138/PonitCloudMap/main/Wired%20connection.png)
 ## Build Ouster-ros package
 ``` shell
-mkdir  -p worksance/src
-cd worksance/src 
+mkdir  -p workspace/src
+cd workspace/src 
 git clone https://github.com/ouster-lidar/ouster_example.git
 cd ..
 catkin_make

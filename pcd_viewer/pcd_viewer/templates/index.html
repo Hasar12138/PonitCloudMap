@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SLAMIT</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="./static/js/jquery.js">
+  
+</head>
+
+<body >
+  <div id="info">
+    <a href="https://threejs.org" target="_blank" rel="noopener">Made by UTU Capstone 2022</a>
+    <a href="https://github.com/Hasar12138/PonitCloudMap/blob/main/5.jpg" target="_blank" rel="noopener">-Instructions</a>
+  </div>
+  <div class="container" spellcheck="false">
+    <section class="google-search-section">
+      <img class="google-logo-image" alt="Google" src="./static/images/slamit.jpg" />  
+      <!-- https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png -->
+      <form class="google-search-form" method = "get ">
+        <main class="google-search-field">
+          <input class="google-search-input" type="text" value="enter text here the link of pcd file" name="URL"/>
+          <br>
+          <br>
+          <label > <input type="radio" name="seg" value='seg' checked>       Plane Detection</label>
+          <label ><input type="radio" name="seg" value ='no_seg'> No Plane Detection</label>
+          <br>
+          min_ratio
+          <select name="min_ratio" id="1" >
+              <option >0.15</option>
+              <option >0.2</option>
+              <option >0.25</option>
+              <option >0.3</option>
+              <option >0.35</option>
+              <option >0.4</option>
+              <option >0.45</option>
+              <option >0.5</option>
+              <option >0.55</option>
+              <option >0.6</option>
+              <option >0.65</option>
+              <option >0.7</option>
+              <option >0.75</option>
+              <option >0.8</option>
+              <option >0.85</option>
+              <option >0.9</option>
+          </select>
+          threshold
+          <select name="threshold" id="2">
+              <option >0.15</option>
+              <option >0.2</option>
+              <option >0.25</option>
+              <option >0.3</option>
+              <option >0.35</option>
+              <option >0.4</option>
+              <option >0.45</option>
+              <option >0.5</option>
+              <option >0.55</option>
+              <option >0.6</option>
+              <option >0.65</option>
+              <option >0.7</option>
+              <option >0.75</option>
+              <option >0.8</option>
+              <option >0.85</option>
+              <option >0.9</option>
+          </select>
+          iterations
+          <select name="iterations" id="3">
+              <option >300</option>
+              <option >400</option>
+              <option >500</option>
+              <option >600</option>
+              <option >700</option>
+              <option >800</option>
+              <option >900</option>
+              <option >1000</option>
+              <option >1100</option>
+              <option >1200</option>
+              <option >1300</option>
+              <option >1400</option>
+              <option >1500</option>
+          </select>
+
+          <div class="google-search-autocomplete">
+       
+          </div>
+        </main>
+        <br>
+        <br>
+        <br>
+        <div class="google-search-actions">
+          <button class="google-button google-search-button" type="submit">
+            View PCD
+          </button>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <p><a href="{{ url_for('cath') }}">Cathedral_Turku</a>  &nbsp;&nbsp;&nbsp;&nbsp;    <a href="{{ url_for('cath_seg') }}">Cathedral_Turku_Seg</a>      </p>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('ict_1st') }}">ICT_1st</a>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="{{ url_for('ict_1st_seg') }}">ICT_1st_Seg</a>           </p>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ url_for('ict_6th_1') }}">ICT_6th_1</a>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="{{ url_for('ict_6th_2') }}">ICT_6th_2</a>          </p>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <a href="{{ url_for('ict_2nd') }}">ICT_2nd</a>          </p>
+      </form>
+    </section>
+  </div>
+  <script src="./static/js/index.js"></script>
+
+
+</body>
+</html>
